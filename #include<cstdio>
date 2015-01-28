@@ -1,0 +1,61 @@
+#include<cstdio>
+#include<cmath>
+using namespace std;
+int fact[42];
+int factorial(int k){
+    int fac;
+	if(fact[k]!=0){
+	return fact[k];
+	}
+	else if(k==1){
+	return 1;
+	}
+	else fac=fact[k]*fact[k-1];
+	fact[k]=fac;
+	return fac;
+}
+bool isPrime(int g){
+	if(g==1||g==0){
+	return false;
+	}
+	int flag=0;
+	else{
+	for(int i=4;i<sqrt(g);i++){
+	if(g%i==0){
+	flag=1;
+	break;
+	}
+	}
+	if(flag==1){
+	return false;
+	}
+	else return true;}
+}
+int main(){
+int t,n,dp[45];
+dp[0]=0;
+dp[1]=1;
+dp[2]=1;
+dp[3]=1;
+dp[4]=2;
+for(int i=5;i<41;i++){
+	int temp=i/4;
+	int tem2=i%4;
+	tem2+=temp;
+	dp[i]=fact(tem2)*pow(2,temp);
+
+}
+scanf("%d",&t);
+while(t--){
+	scanf("%d",&n);
+    int ans=dp[n];
+    int count=0;
+    for(int i=2;i<=n;i++){
+    if(isPrime(i)){
+    count++;
+    }
+    }
+    printf("%d\n",count);
+}
+
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta keywords="Akashdeep Goel">
+<title>Akashdeep Goel</title>
+<style>
+
+#back{
+	positon:absolute;
+	width: 100%;
+	height: auto;
+   
+}
+#text{
+   h2 {
+   position: absolute;
+   top: 50px;
+   left: 0;
+   width: 100%;
+   margin: 0 auto;
+   width: 300px;
+   height: 50px;
+}
+}
+#back img{
+
+    width: 100%;
+    height: auto;
+
+
+}
+#navigation {
+position: fixed;
+top: 0px;
+width: 100%;
+color: #ffffff;
+height: 35px;
+text-align: center;
+padding-top: 15px;
+/* Adds shadow to the bottom of the bar */
+-webkit-box-shadow: 0px 0px 8px 0px #000000;
+-moz-box-shadow: 0px 0px 8px 0px #000000;
+box-shadow: 0px 0px 8px 0px #000000;
+/* Adds the transparent background */
+background-color: rgba(1, 1, 1, 0.8);
+color: rgba(1, 1, 1, 0.8);
+}
+#navigation a {
+font-size: 14px;
+padding-left: 15px;
+padding-right: 15px;
+color: white;
+text-decoration: none;
+}
+
+#navigation a:hover {
+color: white;
+} 
+.but:hover{
+    background-color: rgb(100,150,200);
+    border-radius: 5px;
+    height: 5px;
+
+}
+.hover_text{
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	font-family: National Cartoon;
+	font-size: 48px;
+	color: white;
+}
+.hover_text1{
+	position: absolute;
+	left: 40%;
+	top: 55%;
+	font-family: National Cartoon;
+	font-size: 48px;
+	color: white;
+}
+.titl{
+	text-align: center;
+	font-family: Arial;
+	font-size: 48px;
+}
+.write{
+	padding: 40px;
+    margin: 5px;
+	font-family: Arial;
+	font-size: 28px;
+}
+.write1{
+	position: relative;
+    left: 0px;
+	font-family: Arial;
+	font-size: 28px;
+}
+.about{
+	background-color: rgb(205,193,197);
+	width:auto;
+	height: auto;
+	padding-left: 500px;
+	padding-right: 500px;
+	padding-top: 20px;
+
+}
+.about1{
+	background-color: rgb(205,193,197);
+	width:200px;
+	height: auto;
+	padding-right: 500px;
+	padding-top: 20px;
+	float: left;
+
+}
+.about1{
+	background-color: rgb(205,193,197);
+	width:200px;
+	height: auto;
+	padding-right: 500px;
+	padding-top: 20px;
+	float: right;
+
+}
+#down{
+	width=auto;
+	height=480px;
+	background-color: rgb(238,224,239);
+	border border-radius: 20px;
+	padding: 10px;
+	margin: 20px;
+}
+.boxes{
+	border-radius: 10px;
+	position: relative;
+	left: 0%;
+	width: 200px;
+	height: 20px;
+
+}
+.boxes1{
+	border-radius: 10px;
+	position: relative;
+	left: 0%;
+	width: 200px;
+	height: 100px;
+
+}
+.msg{
+	height: 20px;
+	width: auto;
+}
+#butt{
+	position: relative;
+	left:100px;
+	bottom:0px;
+	width: 100px;
+	height: 50px;
+}
+
+</style>
+</head>
+<body>
+<div id="back">
+<img src="back.jpg">
+<div id="text">
+<h2 class ="hover_text" >____WELCOME TO MY WORLD____</h2>
+<h2 class="hover_text1">AKASHDEEP GOEL</h2></div>
+</div>   
+
+<div id="navigation">
+<a class="but" href>Home</a>
+<a class="but" href>Great Moments</a>
+<a class="but" href>Projects</a>
+<a class="but" href>Contact Me</a>
+</div>
+
+<h1 class="titl">&#8213About Me&#8213</h1>
+<div class="about">
+<p class="write">
+Hey guys! Let me introduce myself.I am a fun loving boy in teens. Currently, I am pursuing 4 year B.Tech degree in Computer Science at IIT Roorkee.I hail from a small town Nangal situated on the foothills of Shivaliks.I did my schooling from BBMB DAV Public School.
+</p>
+</div>
+<h1 class="titl">&#8213Great Moments&#8213</h1>
+<div class="about">
+<p class="write">
+ I have enjoyed few great moments.Some of them are:<br>
+1.Got Glittering star of School Award in 2010.<br>
+2.Got 10 CGPA in Class 10<sup>th</sup>.<br>
+3.Among top 1% in NSEP and NSEC.<br>
+4.Got AIR 537(0.03%) in JEE ADVANCED(2014) among 15 lac candidates Initially.<br>
+5.Got 93.8% in class 12<sup>th</sup> Exam.<br>
+6.Got Prestigious Aditya Birla Scholarship(Among 16 IITIANS) in 2014.
+</p>
+</div>
+<h1 class="titl">&#8213Projects&#8213</h1>
+<div class="about">
+<p class="write">
+I have done few Projects:-<br>
+1.Made School Admission System under the guidance of Prof.Partha Roy<br>
+2.Made Transliterator which takes hindi input and converts it into Indian English form<br>
+Currently I am working on following :<br>
+Building applications so as to make maximum use of Kinect API.<br>
+</p>
+</div>
+<h1 class="titl">&#8213Be in Touch&#8213</h1>
+<div class="about1">
+
+<form id="form1" action="form.php" method="POST">
+<p class="write1">Name</p>
+<input class="boxes" type="text" name="name" >
+<p class="write1">E-mail</p>
+<input class="boxes" type="text" name="mail" >
+<p class="write1">Message</p>
+<textarea name="msg" class="boxes1" rows="5" cols="15"></textarea>
+<input type="submit" value="Submit" id="butt">
+</form>
+</div>
+<div class="about2">
+<p class="write1">Follow me on:<br>
+
+</div>
+ </body>
+</html>
