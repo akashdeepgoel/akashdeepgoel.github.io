@@ -730,10 +730,6 @@ like this</a></li>
             $.ajax({
               url: "more.html",
               success: function(html){
-                  if(html){
-                      $timeline.append(html);
-                      $spinner.hide();
-                  }else{
                       $spinner.html('<p>No more posts to show.</p>');
                   }
                   
