@@ -26,7 +26,6 @@ var json =
     };
 function draw()
 {
-	//alert("Hello");
 	CLICK_COUNT=0;
 	for(vrow=0;vrow<=100;vrow++)
 	{
